@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/appclient.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Stadistic Calculator</h1>
+        </div>
+        <div class="func_container">
+            
+            <div class="num">
+                <form id="addnumbers">
+                    <label for="numadd">Number to add:</label>
+                    <input id="numadd" type="text" name="numadd">
+                    <button type="submit" onclick="app.addnumber()">add</button>
+                </form>
+                <button onclick="app.getList()">Show list</button>
+            </div>
+            
+            <div class="table_num">
+               <table>
+                   <thead>
+                       <tr>
+                           <th>Data</th>
+                       </tr>
+                   </thead>
+                   <tbody id="setNumber">
+
+                   </tbody>
+
+               </table>
+            </div>
+            <div class="results">
+                <br>
+                <br>
+               <button onclick="app.getMean()">Get Mean</button>
+               <br>
+               <br>
+               <label id="resultMean"></label>
+               <br>
+               <br>
+               <button onclick="app.getDev()">Get Standar Deviation</button>
+               <br>
+               <br>
+               <label id="resultDev"></label>
+            </div>
+            <div class="clear">
+                <button>clear</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

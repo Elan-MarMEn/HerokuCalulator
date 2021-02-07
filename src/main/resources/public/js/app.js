@@ -42,12 +42,18 @@ app = (function () {
         $("#resultDev").append("<span class='sub_addition' style='font-weight:bolder;'>Mean:"+data+"</span>");
     }
 
+    function clear(){
+        $(".sub_setNumber").remove();
+        appclient.clear();
+    }
+
 
 
     return{
         addnumber:addnumber,
         getList:getList,
         getMean:getMean,
-        getDev:getDev
+        getDev:getDev,
+        clear:clear
     }
 })();

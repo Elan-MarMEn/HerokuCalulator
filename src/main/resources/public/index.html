@@ -21,10 +21,11 @@
                     <input id="numadd" type="text" name="numadd">
                     <button type="submit" onclick="app.addnumber()">add</button>
                 </form>
-                <button onclick="app.getList()">Show list</button>
+
             </div>
             
             <div class="table_num">
+                <button onclick="app.getList()">Show list</button>
                <table>
                    <thead>
                        <tr>
@@ -52,7 +53,7 @@
                <label id="resultDev"></label>
             </div>
             <div class="clear">
-                <button>clear</button>
+                <button onclick="app.clear()">clear</button>
             </div>
         </div>
     </div>

@@ -46,12 +46,25 @@ appclient = (function () {
             callback("Failed");
         });
     }
+
+    function clear(){
+        var promise = $.post({
+            url: "/clear",
+            data: JSON.stringify(),
+            contentType: "application/json"
+        });
+        promise.then(function(data){
+        }, function(error) {
+            alert("Try again")
+        });
+    }
     
 
     return{
         addnumber:addnumber,
         getList:getList,
         getMean:getMean,
-        getDev:getDev
+        getDev:getDev,
+        clear:clear
     }
 })();
